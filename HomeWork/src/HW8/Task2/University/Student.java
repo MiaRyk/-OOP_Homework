@@ -17,6 +17,34 @@ public class Student {
         return averageMark;
     }
 
+    public void setAverageMark(double averageMark) {
+        this.averageMark = averageMark;
+    }
+
+    public String getFirstName() {
+        return firstName;
+    }
+
+    public void setFirstName(String firstName) {
+        this.firstName = firstName;
+    }
+
+    public String getLastName() {
+        return lastName;
+    }
+
+    public void setLastName(String lastName) {
+        this.lastName = lastName;
+    }
+
+    public int getGroup() {
+        return group;
+    }
+
+    public void setGroup(int group) {
+        this.group = group;
+    }
+
     public int getScholarship() {
         if (averageMark == 5)
             return 100;
@@ -24,6 +52,6 @@ public class Student {
     }
 
     public String getInfo() {
-        return "First name: " + firstName + ", Last name: " + lastName + ", Group: " + group + ", Average mark: " + averageMark + ", Scholarship: " + getScholarship();
+        return "First name: " + getFirstName() + ", Last name: " + getLastName() + ", Group: " + getGroup() + ", Average mark: " + getAverageMark() + ", Scholarship: " + getScholarship();
     }
 }

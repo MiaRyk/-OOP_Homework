@@ -5,6 +5,15 @@ public class Aspirant extends Student {
         super(firstName,lastName,group,averageMark);
         this.scienceWork=scienceWork;
     }
+
+    public String getScienceWork() {
+        return scienceWork;
+    }
+
+    public void setScienceWork(String scienceWork) {
+        this.scienceWork = scienceWork;
+    }
+
     @Override
     public int getScholarship() {
         if (getAverageMark() == 5)
@@ -14,6 +23,6 @@ public class Aspirant extends Student {
 
     @Override
     public String getInfo() {
-        return super.getInfo()+", Science work: "+scienceWork;
+        return super.getInfo()+", Science work: "+getScienceWork();
     }
 }

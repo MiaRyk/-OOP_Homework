@@ -17,12 +17,52 @@ public class Reader {
         this.phoneN = phoneN;
     }
 
+    public String getName() {
+        return name;
+    }
+
+    public void setName(String name) {
+        this.name = name;
+    }
+
+    public int getNumber() {
+        return number;
+    }
+
+    public void setNumber(int number) {
+        this.number = number;
+    }
+
+    public String getFaculty() {
+        return faculty;
+    }
+
+    public void setFaculty(String faculty) {
+        this.faculty = faculty;
+    }
+
+    public String getDateOfBirth() {
+        return dateOfBirth;
+    }
+
+    public void setDateOfBirth(String dateOfBirth) {
+        this.dateOfBirth = dateOfBirth;
+    }
+
+    public String getPhoneN() {
+        return phoneN;
+    }
+
+    public void setPhoneN(String phoneN) {
+        this.phoneN = phoneN;
+    }
+
     public void takeBook(int number) {
-        System.out.println(name + " took " + number + " books");
+        System.out.println(getName() + " took " + getNumber() + " books");
     }
 
     public void takeBook(String... books) {
-        System.out.println(name + " took books: ");
+        System.out.println(getName()  + " took books: ");
         for (String book : books) {
             System.out.println(book);
         }
@@ -30,16 +70,16 @@ public class Reader {
 
     public void takeBook(Books... books) {
         for (Books book : books) {
-            System.out.println(name + " took books: " + book.getBookName() + " by " + book.getAuthor());
+            System.out.println(getName()  + " took books: " + book.getBookName() + " by " + book.getAuthor());
         }
     }
 
     public void returnBook(int number) {
-        System.out.println(name + " returned " + number + " books");
+        System.out.println(getName()  + " returned " + getNumber() + " books");
     }
 
     public void returnBook(String... books) {
-        System.out.println(name + " returned books: ");
+        System.out.println(getName()  + " returned books: ");
         for (String book : books) {
             System.out.println(book);
         }
@@ -47,11 +87,11 @@ public class Reader {
 
     public void returnBook(Books... books) {
         for (Books book : books) {
-            System.out.println(name + " returned books: " + book.getBookName() + " by " + book.getAuthor());
+            System.out.println(getName()  + " returned books: " + book.getBookName() + " by " + book.getAuthor());
         }
     }
 
     public String aboutReader() {
-        return "Reader " + name + ",number of books: " + number + ", ph.n.: " + phoneN + ", faculty: " + faculty + ", date of birth: " + dateOfBirth;
+        return "Reader " + getName()  + ",number of books: " + getNumber() + ", ph.n.: " + getPhoneN() + ", faculty: " + getFaculty() + ", date of birth: " + getDateOfBirth();
     }
 }

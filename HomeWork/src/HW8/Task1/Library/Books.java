@@ -13,12 +13,20 @@ public class Books {
         return bookName;
     }
 
+    public void setBookName(String bookName) {
+        this.bookName = bookName;
+    }
+
     public String getAuthor() {
         return author;
     }
 
+    public void setAuthor(String author) {
+        this.author = author;
+    }
+
     public String getBooks() {
-        return bookName + " by " + author;
+        return getBookName() + " by " + getAuthor();
     }
 
 }
