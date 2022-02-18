@@ -11,6 +11,22 @@ public class Engine implements CarEngine {
         this.mark = mark;
     }
 
+    public String getPower() {
+        return power;
+    }
+
+    public void setPower(String power) {
+        this.power = power;
+    }
+
+    public String getMark() {
+        return mark;
+    }
+
+    public void setMark(String mark) {
+        this.mark = mark;
+    }
+
     public void startEngine() {
         System.out.println("The engine is running");
     }
@@ -40,6 +56,6 @@ public class Engine implements CarEngine {
     }
 
     public String toString() {
-        return "Power: " + power + " Mark: " + mark;
+        return "Power: " + getPower() + " Mark: " + getMark();
     }
 }

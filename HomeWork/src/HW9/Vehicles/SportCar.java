@@ -11,7 +11,15 @@ public class SportCar extends Car {
         this.maxSpeed = maxSpeed;
     }
 
+    public int getMaxSpeed() {
+        return maxSpeed;
+    }
+
+    public void setMaxSpeed(int maxSpeed) {
+        this.maxSpeed = maxSpeed;
+    }
+
     public String toString() {
-        return super.toString() + ", Max speed: " + maxSpeed;
+        return super.toString() + ", Max speed: " + getMaxSpeed();
     }
 }

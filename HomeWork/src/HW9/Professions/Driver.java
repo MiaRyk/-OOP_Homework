@@ -12,7 +12,23 @@ public class Driver extends Person {
         this.gender = gender;
     }
 
+    public int getAge() {
+        return age;
+    }
+
+    public void setAge(int age) {
+        this.age = age;
+    }
+
+    public String getGender() {
+        return gender;
+    }
+
+    public void setGender(String gender) {
+        this.gender = gender;
+    }
+
     public String toString() {
-        return super.toString() + ", Age: " + age + ", Gender: " + gender;
+        return super.toString() + ", Age: " + getAge() + ", Gender: " + getGender();
     }
 }

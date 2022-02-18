@@ -19,6 +19,46 @@ public class Car implements CarEngine {
         this.engine = engine;
     }
 
+    public String getBrand() {
+        return brand;
+    }
+
+    public void setBrand(String brand) {
+        this.brand = brand;
+    }
+
+    public String getCarClass() {
+        return carClass;
+    }
+
+    public void setCarClass(String carClass) {
+        this.carClass = carClass;
+    }
+
+    public double getWeight() {
+        return weight;
+    }
+
+    public void setWeight(double weight) {
+        this.weight = weight;
+    }
+
+    public Driver getDriver() {
+        return driver;
+    }
+
+    public void setDriver(Driver driver) {
+        this.driver = driver;
+    }
+
+    public Engine getEngine() {
+        return engine;
+    }
+
+    public void setEngine(Engine engine) {
+        this.engine = engine;
+    }
+
     @Override
     public void startEngine() {
 
@@ -46,6 +86,6 @@ public class Car implements CarEngine {
     }
 
     public String toString() {
-        return "Driver: " + driver + ", Car: " + brand + " (" + carClass + ", " + weight + ", " + engine + ")";
+        return "Driver: " + getDriver() + "Car: " + getBrand() + " (" + getCarClass() + ", " + getWeight() + ", " + getEngine() + ")";
     }
 }

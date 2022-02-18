@@ -11,7 +11,15 @@ public class Lorry extends Car {
         this.carryingCapacity = carryingCapacity;
     }
 
+    public double getCarryingCapacity() {
+        return carryingCapacity;
+    }
+
+    public void setCarryingCapacity(double carryingCapacity) {
+        this.carryingCapacity = carryingCapacity;
+    }
+
     public String toString() {
-        return super.toString() + ", Lorry carrying capacity: " + carryingCapacity;
+        return super.toString() + ", Lorry carrying capacity: " + getCarryingCapacity();
     }
 }

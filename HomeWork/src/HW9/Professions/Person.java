@@ -9,7 +9,23 @@ public class Person {
         this.experience = experience;
     }
 
+    public String getNameFS() {
+        return nameFS;
+    }
+
+    public void setNameFS(String nameFS) {
+        this.nameFS = nameFS;
+    }
+
+    public int getExperience() {
+        return experience;
+    }
+
+    public void setExperience(int experience) {
+        this.experience = experience;
+    }
+
     public String toString() {
-        return "Name: " + nameFS + ", Experience: " + experience;
+        return "Name: " + getNameFS() + ", Experience: " + getExperience();
     }
 }
