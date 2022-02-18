@@ -30,7 +30,7 @@ public class Reader {
 
     public void takeBook(Books... books) {
         for (Books book : books) {
-            System.out.println(this.name + " took books: " + book.getBookName() + " by " + book.getAuthor());
+            System.out.println(name + " took books: " + book.getBookName() + " by " + book.getAuthor());
         }
     }
 
@@ -52,6 +52,6 @@ public class Reader {
     }
 
     public String aboutReader() {
-        return "Reader " + name + ",number of books: " + number + ", ph.n.: " + phoneN + ", faculty: " + faculty + ", Date of birth: " + dateOfBirth;
+        return "Reader " + name + ",number of books: " + number + ", ph.n.: " + phoneN + ", faculty: " + faculty + ", date of birth: " + dateOfBirth;
     }
 }
