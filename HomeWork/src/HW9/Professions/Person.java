@@ -9,4 +9,7 @@ public class Person {
         this.experience = experience;
     }
 
+    public String toString() {
+        return "Name: " + nameFS + ", Experience: " + experience;
+    }
 }
