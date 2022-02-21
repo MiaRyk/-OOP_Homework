@@ -2,11 +2,28 @@ package HW9.Professions;
 
 public class Person {
     private String nameFS;
-    private int experience;
-
-    public Person(String nameFS, int experience) {
+    private int age;
+    private String gender;
+    public Person(String nameFS, String gender, int age) {
+        this.age = age;
+        this.gender = gender;
         this.nameFS = nameFS;
-        this.experience = experience;
+    }
+
+    public int getAge() {
+        return age;
+    }
+
+    public void setAge(int age) {
+        this.age = age;
+    }
+
+    public String getGender() {
+        return gender;
+    }
+
+    public void setGender(String gender) {
+        this.gender = gender;
     }
 
     public String getNameFS() {
@@ -17,15 +34,7 @@ public class Person {
         this.nameFS = nameFS;
     }
 
-    public int getExperience() {
-        return experience;
-    }
-
-    public void setExperience(int experience) {
-        this.experience = experience;
-    }
-
     public String toString() {
-        return "Name: " + getNameFS() + ", Experience: " + getExperience();
+        return "Name: " + getNameFS() + ", Gender: "+getGender()+", Age: "+getAge();
     }
 }

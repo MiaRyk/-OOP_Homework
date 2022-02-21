@@ -1,16 +1,10 @@
 package HW9;
 
+import HW9.Vehicles.CarControl;
+
 public interface CarEngine {
     public void startEngine();
 
     public void switchOffEngine();
-
-    public void drive();
-
-    public void stop();
-
-    public void turnRight();
-
-    public void turnLeft();
 }
 

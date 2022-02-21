@@ -20,6 +20,6 @@ public class Lorry extends Car {
     }
 
     public String toString() {
-        return super.toString() + ", Lorry carrying capacity: " + getCarryingCapacity();
+        return super.toString() + ", Carrying capacity: " + getCarryingCapacity();
     }
 }

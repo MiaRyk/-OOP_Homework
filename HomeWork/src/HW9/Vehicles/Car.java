@@ -4,7 +4,7 @@ import HW9.CarEngine;
 import HW9.Details.Engine;
 import HW9.Professions.Driver;
 
-public class Car implements CarEngine {
+public class Car implements CarControl {
     private String brand;
     private String carClass;
     private double weight;
@@ -59,21 +59,13 @@ public class Car implements CarEngine {
         this.engine = engine;
     }
 
-    @Override
-    public void startEngine() {
-
-    }
-
-    @Override
-    public void switchOffEngine() {
-
-    }
-
     public void drive() {
+        engine.startEngine();
         System.out.println("Drive");
     }
 
     public void stop() {
+        engine.switchOffEngine();
         System.out.println("Stop");
     }
 
@@ -86,6 +78,6 @@ public class Car implements CarEngine {
     }
 
     public String toString() {
-        return "Driver: " + getDriver() + "Car: " + getBrand() + " (" + getCarClass() + ", " + getWeight() + ", " + getEngine() + ")";
+        return "Driver  " + getDriver() + ", Car: " + getBrand() +", Class: " +getCarClass() + ", Weight: " + getWeight() + ", " + getEngine();
     }
 }

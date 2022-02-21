@@ -35,27 +35,7 @@ public class Engine implements CarEngine {
         System.out.println("The engine was turned off");
     }
 
-    @Override
-    public void drive() {
-
-    }
-
-    @Override
-    public void stop() {
-
-    }
-
-    @Override
-    public void turnRight() {
-
-    }
-
-    @Override
-    public void turnLeft() {
-
-    }
-
     public String toString() {
-        return "Power: " + getPower() + " Mark: " + getMark();
+        return ", Power: " + getPower() + ", Mark: " + getMark();
     }
 }

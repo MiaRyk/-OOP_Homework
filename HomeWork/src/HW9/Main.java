@@ -9,15 +9,15 @@ import HW9.Vehicles.SportCar;
 public class Main {
     public static void main(String[] args) {
 
-        Driver carDriver = new Driver("Sam Smith", 5, 28, "M");
+        Driver carDriver = new Driver("Sam Smith","M",25,5);
         Engine carEngine = new Engine("90", "Tesla");
         Car car = new Car("Tesla", "C", 2263, carDriver, carEngine);
 
-        Driver lorryDriver = new Driver("Courtney Love", 20, 50, "F");
+        Driver lorryDriver = new Driver("Courtney Love", "F",50,30);
         Engine lorryEngine = new Engine("100", "Nisan");
         Lorry lorry = new Lorry("Nisan", "D", 6000, lorryDriver, lorryEngine, 4.5);
 
-        Driver sportCarDriver = new Driver("Mark Russo", 2, 20, "M");
+        Driver sportCarDriver = new Driver("Mark Russo","M",35,8);
         Engine sportCarEngine = new Engine("70", "Toyota");
         SportCar sportCar = new SportCar("Toyota", "C", 2500, sportCarDriver, sportCarEngine, 250);
 
@@ -25,15 +25,13 @@ public class Main {
         System.out.println(car);
         System.out.println("Lorry:");
         System.out.println(lorry);
-        System.out.println("Sports car");
+        System.out.println("Sports car:");
         System.out.println(sportCar);
 
         System.out.println("You can try driving!");
-        carEngine.startEngine();
         car.drive();
         car.turnLeft();
         car.turnRight();
         car.stop();
-        carEngine.switchOffEngine();
     }
 }
